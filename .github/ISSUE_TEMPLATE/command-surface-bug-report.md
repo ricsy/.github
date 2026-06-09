@@ -1,5 +1,5 @@
 ---
-name: command-surface 缺陷报告
+name: command-surface 缺陷报告（MD）
 about: 报告 command-surface 框架行为不符合预期的问题
 title: "[command-surface][Bug] "
 labels:
