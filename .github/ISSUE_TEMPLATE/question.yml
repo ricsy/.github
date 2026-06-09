@@ -1,0 +1,38 @@
+name: 问题提问
+description: 提交使用问题、理解问题或需要讨论的点
+title: "[Question] "
+labels:
+  - question
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: 请说明你当前在做什么，为什么会遇到这个问题。
+      placeholder: 请说明上下文和触发场景。
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 问题
+      description: 请把问题描述清楚，避免只贴一句报错。
+      placeholder: 请说明你具体想弄清楚什么。
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: 已做尝试
+      description: 请说明你已经试过哪些方法，以及为什么还没解决。
+      placeholder: 请说明你已经尝试过的排查步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: help
+    attributes:
+      label: 期望帮助
+      description: 请说明你希望得到的是解释、排查建议，还是具体实现方向。
+      placeholder: 请说明你希望获得什么类型的帮助。
+    validations:
+      required: true
