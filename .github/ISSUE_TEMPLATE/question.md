@@ -1,5 +1,5 @@
 ---
-name: 提问
+name: 问题提问
 about: 提交使用问题、理解问题或需要讨论的点
 title: "[Question] "
 labels: question
