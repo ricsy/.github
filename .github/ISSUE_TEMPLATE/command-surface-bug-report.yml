@@ -1,0 +1,50 @@
+name: command-surface 缺陷报告
+description: 报告 command-surface 框架行为不符合预期的问题
+title: "[command-surface][Bug] "
+labels:
+  - bug
+  - command-surface
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Explain the business context and why this command-surface behavior matters.
+      placeholder: Describe the downstream project, scenario, and why this path is important.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the incorrect framework behavior.
+      placeholder: Explain what command-surface did, why it is wrong, and what downstream breakage it caused.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the smallest reproducible case.
+      placeholder: |
+        1. Run ...
+        2. Load ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: Describe the expected framework behavior.
+      placeholder: Explain the correct result and any compatibility expectations.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Validation Stack
+      description: Paste typecheck/test/lint/build output and any relevant artifacts.
+      placeholder: Include exact local verification results and impact scope.
+    validations:
+      required: false

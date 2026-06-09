@@ -1,0 +1,49 @@
+name: 通用缺陷报告
+description: 报告一个可复现的问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: 这次操作的上下文是什么，为什么要做这件事。
+      placeholder: 请说明业务背景、触发路径和预期目标。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题现象
+      description: 实际出现了什么问题。
+      placeholder: 请说明错误表现、影响范围和复现频率。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最小复现
+      description: 用最小步骤描述如何复现。
+      placeholder: |
+        1. 执行 ...
+        2. 打开 ...
+        3. 观察到 ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+      description: 正确行为应该是什么。
+      placeholder: 请说明期望结果，以及为什么这样才算正确。
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: 验证信息
+      description: 粘贴本地验证栈、截图、日志或补充证据。
+      placeholder: 例如 typecheck/test/lint/build 输出、截图、日志。
+    validations:
+      required: false

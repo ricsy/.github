@@ -1,0 +1,46 @@
+name: 通用能力请求
+description: 提出一个新能力或改进建议
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: 为什么现在要做这项能力。
+      placeholder: 请说明业务背景、当前痛点和触发场景。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 现状问题
+      description: 当前方案缺了什么，或者为什么不够用。
+      placeholder: 请说明现有方案的不足、边界和影响范围。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望方案
+      description: 你希望增加什么能力。
+      placeholder: 请说明建议能力、输入输出和预期行为。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 验收标准
+      description: 什么情况下可以认为这项能力完成了。
+      placeholder: 请列出最小可接受结果和验证方式。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 备选方案
+      description: 已考虑过的替代方案或临时绕过方式。
+      placeholder: 请说明为什么不采用其他方案。
+    validations:
+      required: false

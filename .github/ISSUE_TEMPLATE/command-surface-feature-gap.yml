@@ -1,0 +1,47 @@
+name: command-surface 能力缺口
+description: 提出 command-surface 框架应补齐的通用能力
+title: "[command-surface][Feature] "
+labels:
+  - enhancement
+  - command-surface
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Explain the downstream scenario that needs this framework capability.
+      placeholder: Describe the product context, workflow, and why this need recurs across repositories.
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: Gap
+      description: Describe the missing framework capability.
+      placeholder: Explain what command-surface cannot express today and where the current contract stops.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the desired framework abstraction.
+      placeholder: Explain the desired API, CLI, MCP, or library behavior and why it should live in the framework.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: Define the acceptance bar for this capability.
+      placeholder: Describe the smallest acceptable implementation and how downstream projects will verify it.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Downstream Impact
+      description: List affected repositories, commands, or tests.
+      placeholder: Enumerate impacted projects, failing paths, and current workarounds.
+    validations:
+      required: false
