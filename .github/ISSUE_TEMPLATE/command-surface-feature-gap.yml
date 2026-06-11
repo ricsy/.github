@@ -3,7 +3,6 @@ description: 提出 command-surface 框架应补齐的通用能力
 title: "[command-surface][Feature] "
 labels:
   - enhancement
-  - command-surface
 body:
   - type: textarea
     id: background

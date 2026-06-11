@@ -3,7 +3,6 @@ description: 报告 command-surface 框架行为不符合预期的问题
 title: "[command-surface][Bug] "
 labels:
   - bug
-  - command-surface
 body:
   - type: textarea
     id: background
