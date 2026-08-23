@@ -1,0 +1,86 @@
+# requirement-issue: https://github.com/ricsy/dev-notes/issues/22
+name: 开发观察与经验
+description: 记录可跨项目复用的工程思考、用户与 Agent 协作问题及治理需求
+title: "[Insight] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        产品问题以对应仓库为事实源；本模板只提炼可复用经验，并通过链接建立追溯关系。
+  - type: checkboxes
+    id: sanitization
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已移除令牌、Cookie、个人信息、内网地址、未经授权的私有代码和本机绝对路径。
+          required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 记录类型
+      description: 选择最接近本次观察的类型。
+      options:
+        - 工程经验
+        - 用户与 Agent 协作问题
+        - 规则或 Skill 需求追溯
+        - 工具或流程模式
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: 观察与背景
+      description: 说明观察到的现象，以及为什么值得长期保留。
+      placeholder: 请描述事实、背景和当前影响。
+    validations:
+      required: true
+  - type: textarea
+    id: trigger
+    attributes:
+      label: 触发条件
+      description: 说明什么场景会再次遇到这个问题。
+      placeholder: 请列出可识别的触发条件。
+    validations:
+      required: true
+  - type: textarea
+    id: reusable_insight
+    attributes:
+      label: 可复用经验
+      description: 提炼能够跨项目复用的判断模式、原则或方法。
+      placeholder: 请说明经验本身，不要重复某个产品的完整问题。
+    validations:
+      required: true
+  - type: textarea
+    id: ownership_and_links
+    attributes:
+      label: 问题归属与关联
+      description: 如果源自具体产品问题，请填写所属仓库和 Issue 链接；产品事实仍以对应仓库为准。
+      placeholder: owner/repo#123；没有具体产品问题时填写“无”。
+    validations:
+      required: true
+  - type: textarea
+    id: governance_targets
+    attributes:
+      label: 治理落点
+      description: 可选。填写需要承接该经验的规则、Skill、Hook 或工具策略。
+      placeholder: 如果需要治理落点，请填写候选资产。
+    validations:
+      required: false
+  - type: textarea
+    id: reuse_and_regression
+    attributes:
+      label: 复用与回归标准
+      description: 说明如何复用这条经验，以及后续重构或精简时必须继续覆盖哪些历史场景。
+      placeholder: 请列出可复核的适用场景和通过条件。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 原始证据
+      description: 可选。填写脱敏后的日志、截图、错误代码、请求 ID 或执行结果。
+      placeholder: 没有原始资料时留空，不要填写占位内容。
+    validations:
+      required: false
