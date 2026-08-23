@@ -1,1 +1,6 @@
+# GitHub Issue 模板选择页的全局配置；此文件本身不是可填写的 Issue 模板。
+# 是否向普通贡献者提供“空白 Issue”入口；维护者仍可看到仅限维护者的入口。
 blank_issues_enabled: false
+
+# 模板列表下方的外部支持入口；每项支持 name、url、about，目前不展示额外入口。
+contact_links: []
